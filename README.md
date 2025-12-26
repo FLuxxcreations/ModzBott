@@ -4,6 +4,64 @@ Still require assistance? Visit the support server [here](https://discord.gg/ggd
 
 Here is a summary of the commands and features ModzBott has to offer:
 
+### Welcome / Leave logging:<br>
+**Current supported placeholders for custom messages:** <br>
+`{member}` - Returns member name
+`{member_id}` - Returns member ID
+`{member_name}` - Same as {member}
+`{member_display}` - Shows the member's nickname if one exists (will show regular name if not)
+`{member_mention}` - Mentions the user
+`{guild_name}` - Server name
+`{guild_size}` - Member count after they join
+
+**Greeting commands:** <br>
+<mark> **All greeting commands require the user and the bot to have the manage server commands. Users who do not have this permission will not be able to use it.** </mark>
+
+`/greetings status` - Provides information on the server config for the module. 
+
+`/greetings enable` - Enables all join / leave messages for the server. 
+
+`/greetings disable` - Disables all join / leave messages for the server.
+
+`/greetings event enable [event]` - Allows the user to enable join or leave only messages.
+
+`/greetings event disable [event]` - Allows the user to disable join or leave only messages.
+
+`/greetings channel [event] [#channel]` = Set a channel for either join logs or leave logs. 
+
+`/greetings message preview [event]` - Preview how the join/leave message embed will appear in an active channel.
+
+`/greetings message reset [event]` - Reset the custom join/leave message back to the default option.
+
+`/greetings message set [event] [text]` - Set a custom message for when user joins or leaves.<br>**This does support the placeholders as mentioned above and Discord formatting. To start a new line, type \n then continue. For example, `Welcome to the server!\nWe hope you have a great time!`**
+
+`/greetings dm enable` - Enables the bot to send welcome DMs to new members.
+
+`/greetings dm disable` - Disables welcome DMs.
+
+`/greetings dm set [text]` - Set a custom message for users to recieve when they join the server.<br>**This does support the placeholders as mentioned above and Discord formatting. To start a new line, type \n then continue. For example, `Welcome to the server!\nWe hope you have a great time!`**
+
+`/greetings dm reset` - Reset the welcome DM to the defualt option.
+
+`/greetings dm preview` - Preview how the welcome DM will be sent to members.
+
+`/greetings autorole list` - View which roles will automatically be given to members when they join.
+
+`/greetings autorole clear` - Stops adding roles to members when they join.
+
+`/greetings autorole add @role1 @role2 @role3 etc.` - Add role(s) to be assigned to members when they join.
+
+`/greetings autorole remove @role1 @role2 @role3 etc.` - Remove role(s) and stop them being assigned. 
+
+`/logging event [event_name] enable|disable` - Enable or disable a specific logging event. `event_name`: Supported events mentioned above. `enable` / `disable`: Toggles the event.
+
+`/logging channel set|reset [channel]` - Assign a custom channel to log a specific event or reset it to the default channel.
+
+`/logging cases view [case_id]` - View the details of a specific event case. This will return the ID, event (kick, ban etc.), target user, moderator, reason and the timestamp.
+
+`/logging cases list` - Lists recent event cases.
+
+
 ### Server Logging:<br>
  **Current supported events:** <br>
 `kick` - Logs member kicks from server<br>
@@ -17,7 +75,7 @@ Here is a summary of the commands and features ModzBott has to offer:
 `all` - All server events
 
 **Logging commands:** <br>
-<mark> **All server logging commands require the user to have the manage server commands. Users who do not have this permission will not be able to use it.** </mark>
+<mark> **All server logging commands require the user and the bot to have the manage server commands. Users who do not have this permission will not be able to use it.** </mark>
 
 `/logging enable` - Enables all logging for the server. This will create a <br>`#modzbott-logging` channel if a logging channel has not already been set or if the command has been used for the first time. 
 
