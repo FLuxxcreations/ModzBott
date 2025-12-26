@@ -53,14 +53,6 @@ Here is a summary of the commands and features ModzBott has to offer:
 
 `/greetings autorole remove @role1 @role2 @role3 etc.` - Remove role(s) and stop them being assigned. 
 
-`/logging event [event_name] enable|disable` - Enable or disable a specific logging event. `event_name`: Supported events mentioned above. `enable` / `disable`: Toggles the event.
-
-`/logging channel set|reset [channel]` - Assign a custom channel to log a specific event or reset it to the default channel.
-
-`/logging cases view [case_id]` - View the details of a specific event case. This will return the ID, event (kick, ban etc.), target user, moderator, reason and the timestamp.
-
-`/logging cases list` - Lists recent event cases.
-
 
 ### Server Logging:<br>
  **Current supported events:** <br>
