@@ -6,13 +6,13 @@ Here is a summary of the commands and features ModzBott has to offer:
 
 ### Welcome / Leave logging:<br>
 **Current supported placeholders for custom messages:** <br>
-`{member}` - Returns member name
-`{member_id}` - Returns member ID
-`{member_name}` - Same as {member}
-`{member_display}` - Shows the member's nickname if one exists (will show regular name if not)
-`{member_mention}` - Mentions the user
-`{guild_name}` - Server name
-`{guild_size}` - Member count after they join
+`{member}` - Returns member name<br>
+`{member_id}` - Returns member ID<br>
+`{member_name}` - Same as {member}<br>
+`{member_display}` - Shows the member's nickname if one exists (will show regular name if not)<br>
+`{member_mention}` - Mentions the user<br>
+`{guild_name}` - Server name<br>
+`{guild_size}` - Member count after they join<br>
 
 **Greeting commands:** <br>
 <mark> **All greeting commands require the user and the bot to have the manage server commands. Users who do not have this permission will not be able to use it.** </mark>
